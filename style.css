@@ -1,0 +1,586 @@
+@font-face {
+    font-family: OpenSans-Italic-VariableFont_wdth, wght;
+    src: url(../Fonts/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* header  */
+#header {
+    display: flex;
+    background: #333;
+    padding: 5px 0;
+    color: white;
+    justify-content: center;
+}
+
+#header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.btn-view {
+    background-color: #f36639;
+    color: #fff;
+    padding: 5px 25px;
+    margin-left: 20px;
+    font-size: 0.7rem;
+    border: none;
+    cursor: pointer;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* menu  */
+
+.menu_item{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 20px;
+}
+.menu{
+    display: flex;
+}
+.menu li {padding-left: 30px;}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color2);
+    text-align: center;
+    transition: .15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.menu li a ::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color2);
+    transition: .15s ease-in-out;
+}
+.menu li a:hover {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color2);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+
+
+
+.menu_item p {
+    font-size: 2rem;
+    margin: 12px;
+}
+
+#menu {
+    background-color: #f36639;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0px 0px 0px 60px;
+}
+
+#menu h1 {
+    font-size: 35px;
+}
+
+.fa-chevron-right {
+    padding-right: 10px;
+}
+
+.menu_item1 {
+    display: flex;
+    padding: 20px 55px 0px 0;
+    vertical-align: middle;
+    font-size: 20px;
+
+}
+
+.menu_item1 li {
+    border: none;
+}
+
+#menu ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 20px 0px 0px;
+
+}
+
+.item {
+    background-color: #f36639;
+    color: white;
+    text-decoration: none;
+}
+
+.menu_item .item {
+    border: none;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu_item1 li a {
+    color: white;
+    font-size: 16px;
+}
+
+.item :hover {
+    color: #333;
+    text-decoration: none;
+}
+
+/* content  */
+.background-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.img_background {
+    display: flex;
+    background-image: url(../Images/car.jpg);
+    height: 85vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+}
+
+.img_content {
+    position: absolute;
+    top: 31%;
+    left: 0;
+    color: #fff;
+    max-width: 370px;
+    text-align: center;
+    font-size: 1.5rem;
+    right: 0;
+    margin: 0 auto;
+}
+
+/* button  */
+
+.btn1 {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid white;
+    cursor: pointer;
+    padding: 11px 40px;
+    font-size: 12px;
+    letter-spacing: .08rem;
+}
+
+.fa-book {
+    padding-right: 10px;
+}
+
+.btn1:hover {
+    color: #f36639;
+    border: 2px solid #f36639;
+}
+
+/* card  */
+
+.card_wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    margin: 10px auto;
+    position: relative;
+    margin-top: -190px;
+}
+
+.card {
+    background-color: #f36639;
+    color: #fff;
+    text-align: center;
+}
+
+.fa-brush {
+    font-size: 45px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.fa-gears {
+    font-size: 45px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.fa-dharmachakra {
+    font-size: 45px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.fa-screwdriver {
+    font-size: 45px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+/* machanic  */
+
+.car-repair {
+    margin-right: 80px;
+    margin-top: 50px;
+}
+
+.car_word {
+    margin: 75px;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 35px;
+    color: #f36639;
+}
+
+#company {
+    text-align: center;
+    font-size: 35px;
+    word-spacing: 3px;
+}
+
+.car_word p {
+    text-align: center;
+    font-size: 9px;
+    font-weight: bold;
+
+}
+
+/* services */
+.services_include {
+    background-color: #edeef0;
+}
+
+.auto_repair {
+    text-align: center;
+    padding: auto;
+    margin-top: 80px;
+}
+
+.auto_repair h1 {
+    text-align: center;
+    font-size: 30px;
+    white-space: 0.5px;
+}
+
+#header1 {
+    margin-top: 50px;
+    padding-top: 80px;
+}
+
+.auto_repair h1 strong {
+    font-style: italic;
+    color: black;
+    font-weight: lighter;
+}
+
+#multiple {
+    padding-top: 30px;
+}
+
+.fa-angle-right {
+    color: #f36639;
+}
+
+.item3 {
+    font-weight: lighter;
+}
+
+/* button  */
+.btn_2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.btn_service {
+    width: 160px;
+    height: 40px;
+    background-color: #333;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn_service:hover {
+    background-color: #f36639;
+}
+
+/* button 3  */
+
+.btn_3 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.btn_4 {
+    height: 40px;
+    width: 150px;
+    background-color: #333;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 13px;
+    border: none;
+}
+
+.btn_4:hover {
+    background-color: #f36639;
+}
+
+/* testimonia  */
+#testimonial {
+    margin-bottom: 75px;
+}
+
+.content {
+    padding-top: 70px;
+}
+
+.content h2 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image {
+    padding-right: 50px;
+}
+
+.img_thumnail {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+/* footer  */
+.bg_img {
+    background-image: url(../Images/group2.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.sd_img {
+    display: flex;
+    margin: 0px 0px 0px 65px;
+    padding: 0px 0px 0px 25px;
+    background: transparent;
+    background-color: transparent;
+}
+
+#content_f h1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #f9f9f9;
+    padding: 30px;
+}
+
+.btn_f {
+    padding: 6px 16px 8px 12px;
+    margin: 0px 0 0 60px;
+    background-color: #f36639;
+    border: none;
+    height: 33px;
+    width: 114px;
+    color: #edeef0;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: "Montserrat", Sans-serif;
+    cursor: pointer;
+}
+
+.btn_f:hover {
+    background-color: white;
+    color: #333;
+    transform: scale(1.1);
+}
+
+.max_width {
+    max-width: 49%;
+}
+
+.copy_right1 {
+    background-color: pink;
+}
+
+#copyright {
+    padding: 50px;
+}
+
+/* Responsive Mobile view  */
+
+@media screen and (max-width: 390px) {
+    #header h1 {
+        margin-left: 10px;
+        font-size: 15px;
+
+    }
+
+    .btn-view {
+        font-size: 7px;
+        font-weight: lighter;
+        padding: 5px;
+    }
+
+    .card_wrapper {
+        margin: 10px auto;
+    }
+
+    .background-wrapper {
+        height: 80vh;
+    }
+
+    .car-repair img {
+        height: 220px;
+        width: 280px;
+    }
+
+    .car_word {
+        margin: 30px auto;
+    }
+
+    .car_word h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .car_word p {
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    #header1 {
+        font-size: 30px;
+        font-weight: lighter;
+        font-family: serif;
+    }
+
+    .auto_repair h1 strong {
+        font-family: monospace;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .item3 {
+        font-family: system-ui;
+        font-size: 18px;
+
+    }
+
+    .fa-angle-right {
+        margin-right: 20px;
+
+    }  
+
+    .content h2 {
+        letter-spacing: 3px;
+        font-family: auto;
+    }
+    .image {
+        margin: 30px;
+    }
+    .img_thumnail {
+        height: 70px;
+        width: 70px;
+    }
+
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {
+        display:block;
+    }
+    .bg_img{
+        width: 100%;
+    }
+    .sd_img{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .sd_img img {
+        width: 100%;
+        padding: 10px;
+    }
+    #content_f h1 {
+        font-size: 32px;
+    }
+    .btn_footer button {
+        text-align: center;
+    }
+
+    .btn_f{
+        margin: 0px 0px 10px 100px;
+    }
+   
+
+
+}
